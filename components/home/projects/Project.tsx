@@ -6,17 +6,15 @@ import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import styles from "./projects.module.scss";
 interface Props {
-  modalContent: JSX.Element;
   description: string;
   projectLink: string;
   imgSrc: string;
   tech: string[];
   title: string;
-  code?: string;
+  code: string;
 }
 
 export const Project = ({
-  modalContent,
   projectLink,
   description,
   imgSrc,
