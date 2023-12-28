@@ -1,3 +1,30 @@
+.aboutTop {
+  background-color: var(--brande);
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-family: var(--font-manrope);
+  .aboutPara {
+    max-width: 1150px;
+    margin: auto;
+    position: relative;
+    padding: 8rem;
+    align-items: start;
+    @media (max-width: 900px) {
+      padding: 2rem;
+    }
+
+    h3 {
+      font-size: var(--text-xl);
+      margin-bottom: 2rem;
+      @media (max-width: 1220px) {
+        font-size: var(--text-lg);
+      }
+    }
+  }
+}
+
 .about {
   display: grid;
   grid-template-columns: 1fr 300px;

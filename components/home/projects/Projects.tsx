@@ -65,28 +65,30 @@ const projects = [
     ),
   },
   {
-    title: "WorshipHIM",
+    title: "IUGB University Page",
     imgSrc: "/project-imgs/wh_app.png",
     code: "https://www.github.com",
-    projectLink:
-      "https://play.google.com/store/apps/details?id=com.ellinx.lightapps.worshiphim&hl=en&gl=US",
-    tech: ["React", "React Native", "Styled Components", "Android"],
+    projectLink: "https://iugb.edu.ci/",
+    tech: ["Wordpress", "Elementor", "Yoast SEO", "Block"],
     description:
-      "WorshipHIM is a chord and lyrics app developed to help ease everyone in their worship to God.",
+      "As a world-class, not-for-profit, American-style institution.",
     modalContent: (
       <>
         <p>
-          WorshipHIM is a chord and lyrics app developed to help ease everyone
-          in their worship to God. So that all may know, from the rising of the
-          sun to its setting, That there is none besides God. He is the Lord and
-          there&apos;s no other! Praise Him, Worship Him!
+          As a world-class, not-for-profit, American-style institution, IUGB’s
+          mission is to deliver an English-language liberal arts education in
+          fields critical to growth and development of Côte d’Ivoire and West
+          Africa. The university offers six career-oriented degree programs
+          through two schools: The School of Business and Social Sciences (BSS)
+          and the School of Science, Technology, Engineering and Mathematics
+          (STEM). IUGB also offers a University Preparatory Program.
         </p>
         <p>This is a very fun project that i made using React Native.</p>
       </>
     ),
   },
   {
-    title: "WorshipHIM Landing Page",
+    title: "Aside Studio Landing Page",
     imgSrc: "/project-imgs/worshiphim.png",
     code: "https://www.github.com",
     projectLink: "https://worshiphim.vercel.app/",

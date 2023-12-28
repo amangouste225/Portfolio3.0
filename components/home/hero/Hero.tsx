@@ -4,15 +4,12 @@ import { StandardButton } from "@/components/buttons/StandardButton";
 import { Reveal } from "@/components/utils/Reveal";
 import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
-import Profile from "@/public/jc.jpg";
-const stars1 = "/stars.svg";
-const stars2 = "/stars2.svg";
 
 export const Hero = () => {
   return (
     <section className={`section-wrapper ${styles.hero}`}>
       <Image
-        src={stars2}
+        src="/stars2.svg"
         width="150"
         height="150"
         className={styles.stars2}
@@ -20,7 +17,7 @@ export const Hero = () => {
       />
       <div className={styles.heroGrid}>
         <Image
-          src={stars1}
+          src="/stars.svg"
           width="150"
           height="150"
           className={styles.stars}

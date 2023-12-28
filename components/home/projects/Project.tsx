@@ -4,7 +4,6 @@ import { useAnimation, useInView, motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
-import { ProjectModal } from "./ProjectModal";
 import styles from "./projects.module.scss";
 interface Props {
   modalContent: JSX.Element;
@@ -13,7 +12,7 @@ interface Props {
   imgSrc: string;
   tech: string[];
   title: string;
-  code: string;
+  code?: string;
 }
 
 export const Project = ({
@@ -26,9 +25,6 @@ export const Project = ({
   tech,
 }: Props) => {
   const [hovered, setHovered] = useState(false);
-
-  const [isOpen, setIsOpen] = useState(false);
-
   const controls = useAnimation();
 
   const ref = useRef(null);
@@ -57,7 +53,6 @@ export const Project = ({
         <div
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          onClick={() => setIsOpen(true)}
           className={styles.projectImage}
         >
           <Image
@@ -97,16 +92,6 @@ export const Project = ({
           </Reveal>
         </div>
       </motion.div>
-      <ProjectModal
-        modalContent={modalContent}
-        projectLink={projectLink}
-        setIsOpen={setIsOpen}
-        isOpen={isOpen}
-        imgSrc={imgSrc}
-        title={title}
-        code={code}
-        tech={tech}
-      />
     </>
   );
 };
