@@ -8,7 +8,7 @@
   --white: #fff;
   --text: rgb(235, 236, 243);
   --brand: #8140ef;
-
+  --brande: #3f01a8;
   --text-xs: 1.6rem;
   --text-sm: 1.8rem;
   --text-md: 2.2rem;
@@ -53,7 +53,7 @@ a {
   z-index: 10;
   max-width: 1150px;
   margin: auto;
-  padding: 9.6rem;
+  padding: 8rem;
   overflow: hidden;
 }
 

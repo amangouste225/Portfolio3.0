@@ -5,11 +5,27 @@ import { Reveal } from "@/components/utils/Reveal";
 import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
 import Profile from "@/public/jc.jpg";
+const stars1 = "/stars.svg";
+const stars2 = "/stars2.svg";
 
 export const Hero = () => {
   return (
     <section className={`section-wrapper ${styles.hero}`}>
+      <Image
+        src={stars2}
+        width="150"
+        height="150"
+        className={styles.stars2}
+        alt="stars"
+      />
       <div className={styles.heroGrid}>
+        <Image
+          src={stars1}
+          width="150"
+          height="150"
+          className={styles.stars}
+          alt="stars"
+        />
         <div className={styles.copyWrapper}>
           <Reveal>
             <h1 className={styles.title}>

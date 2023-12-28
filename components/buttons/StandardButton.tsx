@@ -1,15 +1,23 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler, ReactNode } from "react";
 import styles from "./standardbutton.module.scss";
 
 interface Props {
-  children: string | JSX.Element;
+  children: ReactNode;
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  title: string;
+  link: string;
 }
 
-export const StandardButton = ({ children, onClick }: Props) => {
+export const StandardButton = ({ children, onClick, title, link }: Props) => {
   return (
-    <button onClick={onClick} className={styles.standardButton}>
+    <a
+      target="_blank"
+      href={link}
+      className={styles.standardButton}
+      title={title}
+    >
       {children}
-    </button>
+      {title}
+    </a>
   );
 };

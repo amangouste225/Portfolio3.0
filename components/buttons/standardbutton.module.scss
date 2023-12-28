@@ -1,23 +1,23 @@
 .standardButton {
-  outline: none;
+  outline: 1px solid white;
   border: none;
   cursor: pointer;
-
-  padding: 1rem 2.4rem;
-
-  background: var(--white);
+  padding: 1.5rem 2.4rem;
   color: var(--text);
   font-size: var(--text-sm);
-  border-radius: 4px;
-
+  border-radius: 50px;
+  background-color: #180040;
   position: relative;
   z-index: 20;
-
-  overflow: auto;
-
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
   transition: 0.5s opacity;
+  max-width: 200px;
 }
 
 .standardButton:hover {
-  opacity: 0.9;
+  opacity: 1;
+  background-color: transparent;
 }

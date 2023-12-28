@@ -15,15 +15,8 @@ export const Home = () => {
           <Hero />
           <About />
           <Projects />
-          <Contact />
-          {/* <div
-            style={{
-              height: "20px",
-              background:
-                "linear-gradient(180deg, var(--background), var(--background-dark))",
-            }}
-          /> */}
         </main>
+        <Contact />
       </div>
     </>
   );
