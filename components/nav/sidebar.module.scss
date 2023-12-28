@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: space-around;
 
+  @media (max-width: 845px) {
+    flex-direction: column;
+  }
   a {
     font-size: var(--text-sm);
     font-weight: 400;
@@ -20,7 +23,7 @@
 
   .selected {
     background: var(--background);
-    border-right: 1px solid var(--brand);
+    border-bottom: 1px solid var(--white);
     opacity: 1;
   }
 }
@@ -37,11 +40,6 @@
   align-items: center;
   justify-content: center;
 
-  background: var(--background);
-  border-radius: 4px;
-
-  margin: 1.8rem 0;
-
   span {
     font-size: var(--text-md);
     font-weight: 900;
@@ -53,4 +51,5 @@
 .navLinks {
   display: flex;
   gap: 30px;
+  align-items: center;
 }

@@ -3,7 +3,7 @@
   border: none;
   cursor: pointer;
 
-  padding: 1.2rem 2.4rem;
+  padding: 1rem 2.4rem;
 
   background: var(--white);
   color: var(--text);
@@ -13,9 +13,9 @@
   position: relative;
   z-index: 20;
 
-  overflow: hidden;
+  overflow: auto;
 
-  transition: 0.2s opacity;
+  transition: 0.5s opacity;
 }
 
 .standardButton:hover {

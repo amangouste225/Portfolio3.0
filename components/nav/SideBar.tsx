@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import styles from "./sidebar.module.scss";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { OutlineButton } from "../buttons/OutlineButton";
+const Logo = "/a.svg";
+import { AiFillFilePdf } from "react-icons/ai";
 
 export const SideBar = () => {
   const [selected, setSelected] = useState("");
@@ -36,7 +40,7 @@ export const SideBar = () => {
               : (document.location.hash = "");
           }}
         >
-          AM<span>.</span>
+          <Image src={Logo} alt="logo" width="150" height="100" />
         </span>
         <div className={styles.navLinks}>
           <a
@@ -62,6 +66,7 @@ export const SideBar = () => {
           >
             Contact
           </a>
+          <OutlineButton>Download Resume</OutlineButton>
         </div>
       </nav>
     </div>

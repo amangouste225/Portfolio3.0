@@ -10,8 +10,8 @@ interface Props {
 export const OutlineButton = ({ children, onClick }: Props) => {
   return (
     <button onClick={onClick} className={styles.outlineButton}>
-      <AiFillFilePdf size="2.4rem" />
       {children}
+      <AiFillFilePdf size="2.4rem" />
     </button>
   );
 };
