@@ -12,8 +12,8 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Howdy! I&apos;m John Carlo Devera, and I&apos;m a Bachelor of
-              Science in Information Technology graduate.
+              Howdy! I&apos;m Amangoua Kacou Ange-Thierry, and I&apos;m a
+              Self-Taught Frontend Developer based in Abidjan.
               <br />
               <br />I have experience working in both the mobile and web
               development worlds, with a focus on frontend development. I&apos;m
@@ -25,15 +25,15 @@ export const About = () => {
             <p className={styles.aboutText}>
               My skills include HTML, CSS, JavaScript, and various frontend
               frameworks like React and Vue.js. I&apos;ve also worked with
-              backend technologies like Node.js, Firebase, MongoDB and
-              PHP/Laravel , allowing me to build full-stack applications.
+              backend technologies like Node.js, Firebase, MongoDB and, allowing
+              me to build full-stack applications.
             </p>
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              When I&apos;m not coding, I enjoy digital painting. I believe that
-              maintaining a healthy work-life balance is crucial for staying
-              productive and motivated.
+              When I&apos;m not coding, I enjoy playing Basket-Ball and having
+              fun with family. I believe that maintaining a healthy work-life
+              balance is crucial for staying productive and motivated.
             </p>
           </Reveal>
           <Reveal>
@@ -41,7 +41,7 @@ export const About = () => {
               I&apos;m always looking for new challenges and opportunities to
               learn and grow as a developer. If you&apos;re interested in
               working together or have any questions, please don&apos;t hesitate
-              to get in touch! 🔗
+              to get in touch!
             </p>
           </Reveal>
         </div>
