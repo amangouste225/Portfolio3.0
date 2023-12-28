@@ -1,13 +1,13 @@
 :root {
   font-size: 62.5%;
 
-  --background: rgb(17, 17, 17);
+  --background: rgb(0, 0, 0);
   --bg-opaque: rgb(17, 17, 17, 0.25);
   --background-light: rgb(35, 35, 35);
-  --background-dark: rgb(8, 8, 8);
-
+  --background-dark: rgb(0, 0, 0);
+  --white: #fff;
   --text: rgb(235, 236, 243);
-  --brand: #BD5FFF;
+  --brand: #8140ef;
 
   --text-xs: 1.6rem;
   --text-sm: 1.8rem;
@@ -15,6 +15,8 @@
   --text-lg: 3.6rem;
   --text-xl: 5.6rem;
   --text-2xl: 9.6rem;
+  --text-3xl: 14rem;
+  --text-4xl: 16rem;
 }
 
 * {
@@ -33,6 +35,7 @@ body {
   max-width: 100vw;
   scroll-behavior: smooth;
   font-size: var(--text-sm);
+  font-family: var(--font-inter);
 }
 
 body {

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 2.4rem;
-
+  font-family: var(--font-manrope);
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
   }
@@ -10,7 +10,7 @@
 
 .aboutText {
   margin-bottom: 2.4rem;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .links {

@@ -1,12 +1,4 @@
-# YO! Welcome to the "Steam" developer portfolio template
-
-Steam is a starter template designed to help you land more interviews. Below we'll walk through exactly how you can customize this template to make it your own.
-
-Before we go too far, note that I've provided a video walkthrough of the entire project [HERE](https://youtu.be/hu-XLI3bFX8).
-
-You can also find a live version of this project deployed at [https://steam-portfolio-demo.vercel.app/](https://steam-portfolio-demo.vercel.app/).
-
-## Let's get things running
+# Let's get things running
 
 This template is built on top of [NextJS](https://nextjs.org/), a full stack development framework built on top of React.
 
@@ -84,5 +76,3 @@ The first six variables are the colors for the app. The last six are font sizes.
 That's the basics! If you're comfortable digging in yourself, then you should be set.
 
 Want a deeper walkthrough??
-
-[WATCH THE TUTORIAL VIDEO](https://youtu.be/hu-XLI3bFX8)

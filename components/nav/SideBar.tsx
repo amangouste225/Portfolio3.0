@@ -26,63 +26,44 @@ export const SideBar = () => {
   }, []);
 
   return (
-    <div style={{background: "var(--background-dark)"}}>
-      <motion.nav
-        initial={{ x: -70 }}
-        animate={{ x: 0 }}
-        transition={{ duration: 0.5 }}
-        className={styles.sideBar}
-      >
-        <span className={styles.logo} onClick={() => {
-          document.location.hash === "" ?
-          document.getElementById("main")?.scrollIntoView() :
-          document.location.hash = '';
-          }}>
-          JC<span>.</span>
-        </span>
-        <motion.a
-          initial={{ x: -70 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          href="#about"
+    <div style={{ background: "var(--background-dark)" }}>
+      <nav className={styles.sideBar}>
+        <span
+          className={styles.logo}
           onClick={() => {
-            setSelected("about");
+            document.location.hash === ""
+              ? document.getElementById("main")?.scrollIntoView()
+              : (document.location.hash = "");
           }}
-          className={selected === "about" ? styles.selected : ""}
         >
-          About
-        </motion.a>
-        <motion.a
-          initial={{ x: -70 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          href="#projects"
-          onClick={() => setSelected("projects")}
-          className={selected === "projects" ? styles.selected : ""}
-        >
-          Projects
-        </motion.a>
-        <motion.a
-          initial={{ x: -70 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          href="#experience"
-          onClick={() => setSelected("experience")}
-          className={selected === "experience" ? styles.selected : ""}
-        >
-          Exp.
-        </motion.a>
-        <motion.a
-          initial={{ x: -70 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          href="#contact"
-          onClick={() => setSelected("contact")}
-          className={selected === "contact" ? styles.selected : ""}
-        >
-          Contact
-        </motion.a>
-      </motion.nav>
+          AM<span>.</span>
+        </span>
+        <div className={styles.navLinks}>
+          <a
+            href="#about"
+            onClick={() => {
+              setSelected("about");
+            }}
+            className={selected === "about" ? styles.selected : ""}
+          >
+            About
+          </a>
+          <a
+            href="#projects"
+            onClick={() => setSelected("projects")}
+            className={selected === "projects" ? styles.selected : ""}
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            onClick={() => setSelected("contact")}
+            className={selected === "contact" ? styles.selected : ""}
+          >
+            Contact
+          </a>
+        </div>
+      </nav>
     </div>
   );
 };
