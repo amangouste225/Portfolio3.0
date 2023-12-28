@@ -5,7 +5,7 @@ import Image from "next/image";
 import { OutlineButton } from "../buttons/OutlineButton";
 const Logo = "/a.svg";
 import { AiFillFilePdf } from "react-icons/ai";
-
+import Link from "next/link";
 export const SideBar = () => {
   const [selected, setSelected] = useState("");
 
@@ -40,7 +40,9 @@ export const SideBar = () => {
               : (document.location.hash = "");
           }}
         >
-          <Image src={Logo} alt="logo" width="150" height="100" />
+          <Link href="/">
+            <Image src={Logo} alt="logo" width="150" height="100" />
+          </Link>
         </span>
         <div className={styles.navLinks}>
           <a
@@ -66,7 +68,9 @@ export const SideBar = () => {
           >
             Contact
           </a>
-          <OutlineButton>Download Resume</OutlineButton>
+          <div className={styles.btn}>
+            <OutlineButton link="/amangoua.png">Download Resume</OutlineButton>
+          </div>
         </div>
       </nav>
     </div>

@@ -70,9 +70,3 @@ Global styling (colors mainly) are defined using CSS variables in the `styles/gl
 ```
 
 The first six variables are the colors for the app. The last six are font sizes. Play around with these a bit to start making it your own.
-
-## More info
-
-That's the basics! If you're comfortable digging in yourself, then you should be set.
-
-Want a deeper walkthrough??

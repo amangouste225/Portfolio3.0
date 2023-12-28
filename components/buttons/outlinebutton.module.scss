@@ -1,13 +1,11 @@
 .outlineButton {
-  outline: none;
+  outline: 1px solid white;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1rem 2rem;
-
-  border: 2px solid var(--white);
   background: transparent;
   color: var(--white);
   font-size: var(--text-sm);
@@ -15,19 +13,18 @@
 
   position: relative;
   z-index: 20;
-
   overflow: hidden;
 
   transition: 0.2s color;
-
   svg {
     display: block;
   }
 
   @media (max-width: 420px) {
     font-size: 0;
+    outline: none;
     padding: 0.5rem 0.5rem;
-    border: none;
+    border: none !important;
     svg {
       display: block;
     }

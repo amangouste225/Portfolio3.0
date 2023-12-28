@@ -1,17 +1,18 @@
 import { MouseEventHandler } from "react";
 import { AiFillFilePdf } from "react-icons/ai";
 import styles from "./outlinebutton.module.scss";
+import Link from "next/link";
 
 interface Props {
   children: string | JSX.Element;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
+  link: string;
 }
 
-export const OutlineButton = ({ children, onClick }: Props) => {
+export const OutlineButton = ({ children, link }: Props) => {
   return (
-    <button onClick={onClick} className={styles.outlineButton}>
+    <Link href={link} target="_blank" className={styles.outlineButton}>
       {children}
       <AiFillFilePdf size="2.4rem" />
-    </button>
+    </Link>
   );
 };

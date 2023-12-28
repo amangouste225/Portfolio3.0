@@ -8,18 +8,6 @@
   @media (max-width: 845px) {
     flex-direction: column;
   }
-  a {
-    font-size: var(--text-sm);
-    font-weight: 400;
-    border-bottom: 1px solid transparent;
-    transition: 0.1s all;
-  }
-
-  a:hover {
-    background: var(--background);
-    border-bottom: 1px solid var(--white);
-    opacity: 1;
-  }
 
   .selected {
     background: var(--background);
@@ -50,6 +38,28 @@
 
 .navLinks {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
+
+  @media (max-width: 768px) {
+    .btn a {
+      font-size: 0;
+    }
+    .btn {
+      border: none;
+      outline: none;
+    }
+  }
+  a {
+    font-size: var(--text-sm);
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    transition: 0.1s all;
+  }
+
+  a:hover {
+    background: var(--background);
+    border-bottom: 1px solid var(--white);
+    opacity: 1;
+  }
 }
