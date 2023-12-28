@@ -12,7 +12,7 @@ export const About = () => {
         <div className={styles.aboutPara}>
           <div>
             <Reveal width="100%">
-              <h3>If you’re gonna do it, let’s do it right!</h3>
+              <h3>If you do it, let’s do it right!</h3>
             </Reveal>
             <Reveal>
               <p>
