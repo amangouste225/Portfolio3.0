@@ -4,8 +4,8 @@
   padding: 4rem 2.5rem;
   .stars2 {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 10%;
+    bottom: 10%;
     animation: rotate 50s linear infinite;
   }
   @media (max-width: 980px) {
